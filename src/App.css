@@ -35,7 +35,7 @@ body {
 .header {
   text-align: center;
   color: var(--text-color2);
-  margin: 1rem;
+  margin: 0.75rem;
 }
 .copy-password {
   display: flex;
