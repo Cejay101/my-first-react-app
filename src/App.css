@@ -1,38 +1,134 @@
-.App {
+/*    RESET    */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*    VARIABLES    */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+  --primary-color: rgb(166, 222, 166);
+  --text-color: rgb(239, 239, 239);
+  --text-color2: rgb(111, 111, 130);
+  --bar: rgb(255, 215, 71);
+  --background: rgb(0, 0, 0);
+  --background2: rgb(44, 64, 101);
+  --background2-dark: rgb(19, 28, 44);
+}
+/*    DEFAULTS  */
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+.icon{
+  height: 25px;
+  color: var(--primary-color);
+}
+
+.password-generator {
+  width: 22rem;
+  margin: 6rem auto;
+}
+.header {
+  text-align: center;
+  color: var(--text-color2);
+  margin: 1.5rem;
+}
+.copy-password {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.5rem 1rem;
+background-color: var(--background2);
+font-size: 1.5rem;
+color: var(--text-color);
+}
+.generator{
+  padding: 1rem;
+  background-color: var(--background2);
+  margin-top: 1rem;
+}
+ .character-length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.character-length .length{
+  font-size: 1.4rem; 
+}
+.slider{
+
+  -webkit-appearance: none;
+   height: 5px;
+   width: 100%;
+  background-color: var(--primary-color); 
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  
+  height: 20px;
+  border-radius: 50%;
+  width: 20px;
+  background-color: var(--text-color);
+}
+span{
+  margin-left: 1rem;
+}
+.check{
+  margin-top: 1rem;
+}
+.strength{
+  margin-top: 1rem;
+  background-color:var(--background2-dark) ;
+  display: flex;
+  justify-content: space-between;
+  /* height: 0rem; */
+  align-items: center;
+  padding: 1rem;
+  font-weight: 700;
+}
+.strength p:first-child{
+  font-size: 0.8rem;
+  color: var(--text-color2);
+}
+.strength .level{
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.bars{
+  display: flex;
+  gap: 0.1rem;
+}
+.bar{
+  background-color: var(--bar);
+  height: 1.5rem;
+  width: 0.6rem;
+  border: 1px solid var(--text-color);
+}
+button{
+  width: 100%;
+  margin-top:1rem ;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border:none;
+  font-weight: 700;
+}
+
+.footer-text{
+  margin-top: 2rem;
+  font-size: 0.7rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.socials{
+  text-align: center;
+  margin-top: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.socials a{
+  padding: 0.5rem;
 }
