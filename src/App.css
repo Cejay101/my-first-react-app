@@ -27,7 +27,6 @@ body {
   color: var(--primary-color);
   cursor: pointer;
 }
-
 .password-generator {
   width: 23rem;
   margin: 2rem auto;
