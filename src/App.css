@@ -30,12 +30,12 @@ body {
 
 .password-generator {
   width: 23rem;
-  margin: 6rem auto;
+  margin: 2rem auto;
 }
 .header {
   text-align: center;
   color: var(--text-color2);
-  margin: 0.75rem;
+  margin: 1.5rem;
 }
 .copy-password {
   display: flex;
